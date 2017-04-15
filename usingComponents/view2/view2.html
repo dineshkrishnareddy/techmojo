@@ -1,0 +1,20 @@
+<div ng-if="showData">
+    <table class="table">
+        <thead>
+            <th>Peroid</th>
+            <th>EMI</th>
+            <th>Interest</th>
+            <th>Principle</th>
+            <th>Balance</th>
+        </thead>
+        <tbody>
+            <tr ng-repeat="emi in emiTable">
+                <td>{{$ctrl.emi.period}}</td>
+                <td>{{$ctrl.emi.emi | number:2}}</td>
+                <td>{{$ctrl.emi.interest | number:2}}</td>
+                <td>{{$ctrl.emi.principle | number:2}}</td>
+                <td>{{$ctrl.emi.balance | number:2}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

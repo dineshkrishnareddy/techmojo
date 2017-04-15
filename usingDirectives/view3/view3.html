@@ -1,0 +1,18 @@
+<table class="table">
+    <thead>
+        <th>Peroid</th>
+        <th>EMI</th>
+        <th>Interest</th>
+        <th>Principle</th>
+        <th>Balance</th>
+    </thead>
+    <tbody>
+        <tr ng-repeat="emi in emiTable">
+            <td>{{emi.period}}</td>
+            <td>{{emi.emi | number:2}}</td>
+            <td>{{emi.interest | number:2}}</td>
+            <td>{{emi.principle | number:2}}</td>
+            <td>{{emi.balance | number:2}}</td>
+        </tr>
+    </tbody>
+</table>

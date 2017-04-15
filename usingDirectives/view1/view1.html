@@ -1,0 +1,14 @@
+
+<form id="loanDetails" name="loanDetails" invalidate>
+  <label for="amount">Loan Amount </label>
+  <input id="amount" ng-model="loan.amount" type="text" ng-required="true">
+  <br>
+  <label for="emiCount">Total EMI's (In months) </label>
+  <input id="emiCount" ng-model="loan.emiCount" type="text" ng-required="true">
+  <br>
+  <label for="annualInterest">Annual Interest </label>
+  <input id="annualInterest" ng-model="loan.AnnInterest" type="text" ng-required="true">
+  <br>
+  <button ng-disabled="loanDetails.$invalid" ng-click="calculate()">Calculate</button>
+  <button ng-click="loan={}">Clear</button>
+</form>

@@ -1,0 +1,9 @@
+<div ng-if="showData">
+    <label>Loan Amount : </label><label>{{$ctrl.loan.amount | number:2}}</label> <br>
+    <label>Total no of EMI's : </label><label>{{$ctrl.loan.emiCount}}</label> <br>
+    <label>Annual Interest : </label><label>{{$ctrl.loan.annualInterest}}</label> <br>
+    <label>Monthly Interest : </label><label>{{$ctrl.loan.monthlyInterest}}</label> <br>
+    <label>Monthly EMI Payment : </label><label>{{$ctrl.loan.monthlyEmi | number:2}}</label> <br>
+    <label>Total Loan Amount Payable : </label><label>{{$ctrl.loan.totalLoanAmount | number:2}}</label> <br>
+    <label>Total Interest Payable : </label><label>{{$ctrl.loan.interestPaid | number:2}}</label> <br>
+</div>
